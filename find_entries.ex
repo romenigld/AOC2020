@@ -5,7 +5,7 @@ defmodule FindEntries do
     |> String.trim()
     |> String.split("\n")
     |>  Enum.map(&String.to_integer/1)
-    |> IO.inspect(label: "Enum.map(&String.to_integer/1 \n")
+    #|> IO.inspect(label: "Enum.map(&String.to_integer/1 \n")
     |> match_2020()
 
   end
@@ -38,4 +38,4 @@ defmodule FindEntries do
   end
 end
 
-# FindEntries.find "./puzzle_input.txt"
+FindEntries.find "./puzzle_input.txt"
